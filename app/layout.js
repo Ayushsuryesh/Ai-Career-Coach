@@ -9,7 +9,7 @@ import { dark } from "@clerk/themes";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "AI Career Coach",
+  title: "SenSAi - AI Career Coach",
   description: "",
 };
 
@@ -18,8 +18,7 @@ export default function RootLayout({ children }) {
     <ClerkProvider
       appearance={{
         baseTheme: dark,
-      }}
-    >
+      }}>
       <html lang="en" suppressHydrationWarning>
         <head>
           <link rel="icon" href="/logo.png" sizes="any" />
@@ -29,15 +28,14 @@ export default function RootLayout({ children }) {
             attribute="class"
             defaultTheme="dark"
             enableSystem
-            disableTransitionOnChange
-          >
+            disableTransitionOnChange>
             <Header />
             <main className="min-h-screen">{children}</main>
             <Toaster richColors />
 
             <footer className="bg-muted/50 py-12">
               <div className="container mx-auto px-4 text-center text-gray-200">
-                <p>Made with 💗 by RoadsideCoder</p>
+                <p>Made with 💗 by Ayush</p>
               </div>
             </footer>
           </ThemeProvider>
